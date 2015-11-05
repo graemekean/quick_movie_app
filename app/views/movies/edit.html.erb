@@ -1,0 +1,85 @@
+<div class='container'>
+<div class='holder2'>
+
+<h1>Edit Movie</h1>
+
+
+
+<%= form_for @movie do |f| %>
+  <%= f.label :title, 'Title:' %>
+  <%= f.text_field :title %>
+  
+&nbsp;&nbsp;&nbsp;
+
+  <%= f.label :director, 'Director:' %>
+  <%= f.text_field :director %>
+  
+  &nbsp;&nbsp;&nbsp;
+  
+  <%= f.label :writer, 'Writer:' %>
+  <%= f.text_field :writer %>
+  <br>
+  <br>
+ 
+
+  <%= f.label :studio, 'Studio:' %>
+  <%= f.text_field :studio %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :genre, 'Genre:' %>
+  <%= f.text_field :genre %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :year, 'year:' %>
+  <%= f.text_field :year %>
+  <br>
+  <br>
+  <%= f.label :runtime, 'Runtime:' %>
+  <%= f.text_field :runtime %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :tagline, 'Tagline:' %>
+  <%= f.text_field :tagline %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :certificate, 'Certificate:' %>
+  <%= f.text_field :certificate %>
+  <br>
+  <br>
+  <%= f.label :imdb_link, 'IMDB:' %>
+  <%= f.text_field :imdb_link %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :imdb_rating, 'IMDB Rating:' %>
+  <%= f.text_field :imdb_rating %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :link_to_buy, 'Buy Now Link:' %>
+  <%= f.text_field :link_to_buy %>
+  <br>
+  <br>
+  <%= f.label :link_to_trailer, 'Trailer Url:' %>
+  <%= f.text_field :link_to_trailer %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :poster_url, 'Poster Art - Url:' %>
+  <%= f.text_field :poster_url %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :fanart1_url, 'Fan Art 1 - Url:' %>
+  <%= f.text_field :fanart1_url %>
+  <br>
+  <br>
+  <%= f.label :fanart2_url, 'Fan Art 2 - Url:' %>
+  <%= f.text_field :fanart2_url %>
+  &nbsp;&nbsp;&nbsp;
+
+  <%= f.label :background_url, 'Background Art - Url:' %>
+  <%= f.text_field :background_url %>
+  <br>
+  <br>
+  <%= f.submit 'Update Movie!!' %>
+<% end %>
+
+</div>
+</div>

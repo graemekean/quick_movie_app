@@ -1,0 +1,29 @@
+
+<div class='container'>
+<div class='holder'>
+
+<h1><%= @movie.title %></h1>
+<br>
+
+
+<% @reviews.each do |review| %>
+
+<% if review.movie_id == @movie.id %>
+<%#= recipe.name %>
+<%= link_to(review.title, review_path(review)) %>&nbsp;&nbsp;
+<% else %>
+<% end %>
+
+
+<% end %>
+<br>
+<br>
+
+<%= button_to('Delete Movie', movie_path(@movie), method: :delete, data:{confirm: "Delete Movie? Are you sure?"}) %>
+<%= link_to("Edit Movie", edit_movie_path(@movie)) %>
+
+
+
+
+</div>
+</div>

@@ -1,0 +1,17 @@
+<div class='container'>
+<div class='holder2'>
+
+<h1>All Movies Index</h1>
+  <p>|&nbsp;<% @movies.each do |movie| %>
+  
+  <%= link_to(movie.title, movie_path(movie)) %> &nbsp;   |&nbsp;
+
+  <%#= button_to('Delete Country', country_path(country), method: :delete, data:{confirm: "Delete country? Are you sure?"}) %>
+  <%#= link_to("Edit Country", edit_country_path(country)) %>
+  
+  <% end %></p>
+  <br>
+  <br>
+
+</div>
+</div>
